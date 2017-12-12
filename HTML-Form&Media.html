@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>video</title>
+</head>
+<body>
+    <!-- audio基本一致 -->
+    <video controls="controls" height="100" width="200" loop="loop" autoplay="autoplay" poster="image/1.jpg">
+        <source src="video/1.mp4">
+    </video>
+    <form><!-- 表单 -->
+        username:&nbsp;<!-- 添加空格 -->
+        <input type="text" name="name" size="20" maxlength="15">
+        <br>
+            password:&nbsp;
+            <input type="password" name="address" size="20" maxlength="30"><br><!-- value属性为初始值但一般不用 -->
+            <input type="submit" name="submit" value="login" action="image/1.jpg"><!-- 
+            value显示文字 action为提交至的指向文件-->
+            <input type="reset" name="reset" value="reset">
+    </form>
+    <form>
+        <input type="radio" name="gender" value="male">male
+        <!-- radio是单选按钮但是，name需要相同 -->
+        <input type="radio" name="gender" value="female">female
+    </form>
+    <div>
+        <h4>Ability</h4>
+        <form>
+            <input type="checkbox" name="Ability" value="Ability1">JAVA<br>
+            <input type="checkbox" name="Ability" value="Ability2">Python<br>
+            <input type="checkbox" name="Ability" value="Ability3">JavaScript<br>
+            <input type="checkbox" name="Ability" value="Ability4">Swift
+        </form>
+    </div>
+        <form>
+            E-mail:
+            <input type="email" name="email" value=""><br>
+            <input type="submit" name="">
+        </form>
+        <form>
+            <input type="search" name="email">
+        </form>
+        <form>
+            Homepage:<input type="url" name="a"><br>
+            Age:<input type="number" name="Age" min="1" max="100" step="2"><input type="submit" name=""><br>
+            Birthday:<input type=date name="Birthday" value=""><input type="submit" name="">
+        </form>
+    <div>
+        <form>
+            What's your major?<br>
+            <select name="major" size="4" multiple="">
+                <option value="1" selected>EE</option>
+                <option value="1" selected>CS</option>
+                <option value="1" selected>ML</option>
+                <option value="1" selected>ESE</option>
+            </select>
+        </form>
+        <form>
+            Introuduce yourself<br>
+            <input type="textarea" name="" cols="100" rows="50">
+            Upload a resume<br>
+            <input type="file" name="file">
+        </form>
+
+    </div>
+</body>
+</html>
+<!-- 
+表单
+    在form标签下，属性有
+        text
+        password
+        radio
+        checkbox
+        submit
+        reset
+        email
+        search
+        tel 多用于移动端，输入键盘自动切换到数字
+        url
+        number  定义min max step
+        date month week time datetime datetime-local 目前safari不支持选日历
+        textare 文本域
+        buttom
+        file
+ -->
