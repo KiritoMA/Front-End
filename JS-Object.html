@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <script type="text/javascript">
+        // person = new Object();
+        // person.gender = "male";
+        // person.name = "Ben"
+        // person.age = 23;
+        // person = {//注意是逗号
+        //     name : "Ben",
+        //     age : 23
+        // }
+
+        // document.write(person.name + "is" + person.age + "years old.");
+        function person(firstname,lastname,age)
+        {
+            this.firstname=firstname;
+            this.lastname=lastname;
+            this.age=age;
+            this.changename=changename;
+            function changename(name)
+            {
+                this.lastname=name;
+            }
+        }
+        Ben = new person("Ben","Green",23);
+        Ben.changename("White");
+        document.write(Ben.lastname);
+    </script>
+
+</body>
+</html>
