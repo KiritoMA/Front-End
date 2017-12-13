@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <div id="sum">
+        <p id="1stP">this is a paragraph</p>
+        <p id="2ndP">this is another paragraph</p>
+    </div>
+    <script type="text/javascript">
+        var para=document.createElement("p");//增加标签
+        var node = document.createTextNode("This is an added paragraph");//创建文本节点
+        para.appendChild(node);//追加文本节点
+        var element=document.getElementById('sum');//找到已有的元素
+        element.appendChild(para);//添加新元素
+        var nopara=document.getElementById("1stP");
+        element.removeChild(nopara);//删除元素
+    </script>
+</body>
+</html>
