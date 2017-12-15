@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+  <script type="text/javascript">
+    var Person = function(name){
+      this.name=name;
+    };
+    person1 = new Person("Ben");
+    alert(typeof Person);//Person是Function
+    alert(typeof person1);//实例Person1是Object
+
+    alert(Person.prototype.constructor);
+    //constructor指向构造函数 
+    //Person.prototype.constructor==Person;//原形对象
+    //person1.constructor==Person;//实例对象
+    alert(person1.__proto__);//[object Object] 指向Person.prototype
+    alert(Person.prototype);//[object Object]
+
+  </script>
+</body>
+</html>
+<!-- 普通对象的构造函数是Object
+    构造器，即构造函数都是函数对象 -->
+
+    <!-- 实例对象的原形（person1.__proto__）指向构造函数的原型对象µ（Person.prototype） -->
+
+    <!-- 所有函数对象的 __proto__ 都指向 Function.prototype，它是一个空函数（Empty function）
+    所有对象的 __proto__ 都指向其构造器的 prototype -->
