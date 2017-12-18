@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.3.min.js"></script>
+  <script src="myjs.js"></script>
+  <title></title>
+  <style type="text/css"> 
+	div.panel,p.flip
+	{
+	margin:0px;
+	padding:5px;
+	text-align:center;
+	background:#e5eecc;
+	border:solid 1px #c3c3c3;
+	}
+	div.panel
+	{
+	height:120px;
+	display:none;/*加载时为隐藏状态*/
+	}
+	div.animate{
+		height: 100px;
+		width: 100px;
+		position: relative;
+		background: red;
+	}
+  </style>
+</head>
+<body>
+  <p class="set">set it in red.</p>
+  <button type="button" id="hide">Hide</button>
+  <button type="button" id="show">Show</button>
+  <div class="panel">
+  	<p>
+  		Here is going to slip.
+  	</p>
+  </div>
+  <p class="flip">click Here</p>
+  <div class="animate"></div>
+  <button id="stop">Stop</button>
+  <div style="background-color: yellow">
+  	<ol>
+  		<li>first</li>
+  		<li>second</li>
+  	</ol>
+  	<button id="append">Add Item</button>
+  	<button id="empty">Empty</button>
+  </div>
+</body>
+</html>
